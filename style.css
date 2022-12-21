@@ -5,6 +5,12 @@ SPACING SYSTEM (px)
 FONT SIZE SYSTEM (px)
 10 / 12 / 14 / 16 / 18 / 20 / 24 / 30 / 36 / 44 / 52 / 62 / 74 / 86 / 98
 */
+/*
+COLORS__-----------
+main-color:#087f5b;
+gray-color:#343a40;
+tints:#099268;
+*/
 
 * {
   margin: 0;
@@ -17,6 +23,8 @@ FONT SIZE SYSTEM (px)
 /* ------------------------ */
 body {
   font-family: 'Segoe UI', sans-serif;
+  color: #343a40;
+  border-bottom: 8px solid #087f5b;
 }
 
 .container {
@@ -71,6 +79,31 @@ h1 {
   line-height: 1.7;
 }
 
+.btn:link,
+.btn:visited {
+  background-color: #087f5b;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.btn:hover {
+  background-color: #099268;
+}
+
+.btn--big {
+  padding: 16px 32px;
+  font-size: 18px;
+}
+
+.btn--small {
+  font-size: 14px;
+  padding: 8px 14px;
+  line-height: 14px;
+}
+
 img {
   width: 100%;
 }
@@ -89,7 +122,11 @@ img {
 }
 
 /* TESTIMONIAL */
-.testimonial-section {}
+.testimonial-section {
+  background-color: #087f5b;
+  color: #fff;
+  padding: 24px;
+}
 
 .testimonial-box {
   grid-column: 2 / -1;
@@ -145,4 +182,5 @@ h3 {
 footer {
   margin-bottom: 48px;
   font-size: 14px;
+  color: #495057;
 }
